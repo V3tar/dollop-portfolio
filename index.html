@@ -11,16 +11,19 @@
 </head>
 <body>
     <header>
-        <nav class="nav-links">
-            <div>
-                <div class="logo">
-                    <a href="#" class="logo-link">Vetar.me</a>
-                </div>
+        <div class="scroll-indicator">
+            <div class="scroll-indicator-bar"></div>
+        </div>
+        <div>
+            <div class="logo">
+                <a href="#" class="logo-link">Vetar.me</a>
             </div>
+        </div>
+        <nav class="nav-links">
             <div class="links-container">
-                <a href="#" class="scroll-link link">Profile</a>
+                <a href="#" class="scroll-link link current">Home</a>
                 <a href="resume.html" class="scroll-link link">Resume</a>
-                <a href="#" class="scroll-link link">Contact</a>
+                <a href="#contact" class="scroll-link link">Contact</a>
                 <a href="#skills" class="scroll-link link">Skills</a>
             </div>
         </nav>
@@ -29,14 +32,14 @@
         <div class="profile-details">
             <h1>Hello I'm Victor Edes Tairo</h1>
             <h2>A Front-end Web Developer and A Photographer</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quia vero laborum ipsa eos quos nulla fugiat ratione cumque! Consectetur exercitationem repellendus maiores a laborum accusantium cupiditate facere voluptates quos?</p>
+            <p>I'm a junior Web-developer with experience in HTML,CSS and Javascript Mainly from my personal Projects, familiar with Github. My strong technical knowledge and outstanding interpersonal skills enable me to interact with a wide range of clients. I'm eager to learn, grow and improve my skills. I enjoy using my technical knowledge to the benefit of my surrounding society and organisations.</p>
             <div class="links-btns">
-                <a href="#" class="link-btn">Hire Me</a>
+                <a href="#contact" class="link-btn">Hire Me</a>
                 <a href="imgs/resume.webarchive" class="link-btn" download>Resume <i class="fa-solid fa-arrow-down"></i></a>
             </div>
             <div class="socials">
-                <a href="#" class="social"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="social"><i class="fa-brands fa-codepen"></i></a>
+                <a href="https://github.com/V3tar" class="social" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://codepen.io/v3etar" class="social" target="_blank"><i class="fa-brands fa-codepen"></i></a>
             </div>
         </div>
         <div class="profile-picture">
@@ -47,55 +50,63 @@
         <div class="bars">
             <div class="heading">
                 <h1>Skills</h1>
+                <div class="underline"></div>
             </div>
             <div class="label-out">
                 <label for="html">HTML</label>
-                <div class="progress" style="height: 5px;">
+                <div class="progress" style="height: 3px;">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
                 </div>
             </div>
             <div class="label-out">
                 <label for="html">CSS</label>
-                <div class="progress" style="height: 5px;">
+                <div class="progress" style="height: 3px;">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
                 </div>
             </div>
             <div class="label-out">
                 <label for="html">Javascript</label>
-                <div class="progress" style="height: 5px;">
+                <div class="progress" style="height: 3px;">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                 </div>
             </div>
             <div class="label-out">
                 <label for="html">Photography</label>
-                <div class="progress" style="height: 5px;">
+                <div class="progress" style="height: 3px;">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
                 </div>
             </div>
             <div class="label-out">
                 <label for="html">Photoshop</label>
-                <div class="progress" style="height: 5px;">
+                <div class="progress" style="height: 3px;">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
                 </div>
             </div>
             <div class="label-out">
                 <label for="html">Bootstrap</label>
-                <div class="progress" style="height: 5px;">
+                <div class="progress" style="height: 3px;">
                     <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
                 </div>
             </div>
-        </div>
-        <div class="skill-icons">
-            <div class="skill-icon">
-                <i class="fa-solid fa-camera-retro"></i>
-                <span>Photography</span>
+            <div class="label-out">
+                <label for="html">Front-end development</label>
+                <div class="progress" style="height: 3px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                </div>
             </div>
-            <div class="skill-icon">
-                <i class="fa-solid fa-network-wired"></i>
-                <span>Web Development</span>
+        </div>
+    </section>
+    <section class="contact skill" id="contact">
+        <div class="heading label-out">
+            <h1>Contact</h1>
+            <div class="underline"></div>
+            <div class="contact-info label-out">
+                <label for="phone"><i class="fa-solid fa-square-phone-flip"></i>+86 186 2905 6075</label>
+                <label for="email"><i class="fa-solid fa-at"></i>vetarluka@dingtalk.com</label>
             </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@
 
 header {
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s linear;
 }
 .nav-links {
     display: flex;
@@ -20,12 +24,6 @@ header {
     background: #0091ff;
     padding: 5px 8px;
 }
-.link:focus {
-    color: #ffffff;
-    background: #000000;
-    padding: 5px 8px;
-    border:2px solid #ffffff;
-}
 body {
     font-family: 'Overpass', sans-serif;
     background-image: linear-gradient(120deg,#d5ecfa,#dde6ec);
@@ -43,3 +41,30 @@ h5 {
 ul {
     list-style-type: decimal;
 }
+.current {
+    color: #ffffff;
+    background: #000000;
+    padding: 5px 8px;
+    border:2px solid #ffffff;
+}
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 97%;
+    background-image: linear-gradient(120deg,#a5d6f4,#73a7c7);
+}
+.scroll-indicator {
+    position: fixed;
+    height: 0.2rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.scroll-indicator-bar {
+    background-color: #ffbb00;
+    height: 0.2rem;
+    width: 0%;
+}
+

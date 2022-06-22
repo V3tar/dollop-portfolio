@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap');
 header {
     padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: all 0.3s linear;
 }
 body {
     font-family: 'Overpass', sans-serif;
@@ -23,12 +27,7 @@ body {
     background: #0091ff;
     padding: 5px 8px;
 }
-.link:focus {
-    color: #ffffff;
-    background: #000000;
-    padding: 5px 8px;
-    border:2px solid #ffffff;
-}
+
 img {
     width: 50%;
 }
@@ -81,8 +80,11 @@ h1, h2 {
 }
 .heading > h1 {
     color: #646464;
-    text-decoration: underline;
     font-size: 1.4em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 .skill-icons {
     display: flex;
@@ -98,6 +100,48 @@ h1, h2 {
 span {
     display: block;
     font-size: 0.6em;
+}
+.current {
+    color: #ffffff;
+    background: #000000;
+    padding: 5px 8px;
+    border:2px solid #ffffff;
+}
+.underline {
+    background-color: #646464;
+    height: 3px;
+}
+.bars {
+    padding: 20px;
+}
+.label-out {
+    padding: 8px 22px;
+}
+label {
+    font-weight: 600;
+}
+.scroll-indicator {
+    position: fixed;
+    height: 0.2rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.scroll-indicator-bar {
+    background-color: #ffbb00;
+    height: 0.2rem;
+    width: 0%;
+}
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(120deg,#a5d6f4,#73a7c7);
+}
+.contact-info > label {
+    display: block;
 }
 
 

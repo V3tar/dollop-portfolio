@@ -143,5 +143,8 @@ label {
 .contact-info > label {
     display: block;
 }
-
+.profile-picture {
+    height: 355px;
+    width: 655px;
+}
 

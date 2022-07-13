@@ -147,4 +147,9 @@ label {
     height: 355px;
     width: 655px;
 }
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
 
